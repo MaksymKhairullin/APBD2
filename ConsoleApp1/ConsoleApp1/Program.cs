@@ -1,13 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine(GetAvg([1,2,3,4,5]));
+Console.WriteLine(GetMax([1,2,3,4,5,7,123,45,32,12]));
 
-static double GetAvg(int[] arr)
+static int GetMax(int[] arr)
 {
-    int sum = 0;
+    int max = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        sum += arr[i];
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
     }
-    return sum / arr.Length;
+    return max;
 }
