@@ -7,9 +7,9 @@ Console.WriteLine(GetAvg([1,2,3,4,5]));
 static double GetAvg(int[] arr)
 {
     int sum = 0;
-    for (int i = 0; i < arr.Length; i++)
+    for (int r = 0; r < arr.Length; r++)
     {
-        sum += arr[i];
+        sum += arr[r];
     }
     return sum / arr.Length;
 }
