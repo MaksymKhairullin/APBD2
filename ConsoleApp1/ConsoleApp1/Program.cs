@@ -4,10 +4,10 @@ Console.WriteLine(GetAvg([1,2,3,4,5]));
 
 static double GetAvg(int[] arr)
 {
-    int sumNum = 0;
-    for (int i = 0; i < arr.Length; i++)
+    int sum = 0;
+    for (int l = 0; l < arr.Length; l++)
     {
-        sumNum += arr[i];
+        sum += arr[l];
     }
-    return sumNum / arr.Length;
+    return sum / arr.Length;
 }
